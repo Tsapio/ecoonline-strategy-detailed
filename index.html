@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoOnline: Three Strategic Video Roadmaps</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -21,6 +22,11 @@
             color: #FFFFFF;
             border-color: #004D40;
         }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            height: 400px;
+        }
     </style>
 </head>
 <body class="text-[#1A202C]">
@@ -28,9 +34,66 @@
     <div class="max-w-6xl mx-auto p-4 sm:p-8">
 
         <!-- Header Section -->
-        <header class="text-center mb-12">
+        <header class="text-center mb-16">
             <h1 class="text-4xl sm:text-5xl font-extrabold text-[#004D40]">EcoOnline: Three Strategic Video Roadmaps</h1>
+            <p class="mt-4 text-lg sm:text-xl text-gray-600">A data-driven plan to build a massive audience and dominate the EHS & ESG educational landscape in 2025.</p>
         </header>
+
+        <!-- Competitive Landscape -->
+        <section class="mb-20">
+            <div class="bg-white p-8 rounded-2xl shadow-lg">
+                <h2 class="text-3xl font-bold text-center text-[#004D40] mb-2">The Competitive Landscape: A Clear Opportunity</h2>
+                <p class="text-center text-gray-600 mb-8 max-w-3xl mx-auto">Analysis of the full competitor set reveals a significant opportunity. While some have large subscriber counts, their content is often inconsistent, overly promotional, or fails to address the practical needs of the modern safety professional. **No single competitor is effectively owning the "practical, educational" space with a Shorts-first strategy.**</p>
+                <div class="chart-container">
+                    <canvas id="competitorChart"></canvas>
+                </div>
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-sm">
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-gray-800">Subscriber Leader: Safety Culture (31.6k subs)</h4>
+                        <p class="text-gray-600 mt-2">**What they do well:** They create high-value, practical "how-to" videos and checklists that directly address user pain points, proving there's a huge appetite for educational content.</p>
+                        <p class="text-gray-600 mt-2">**Where they fall short:** Their release schedule is inconsistent, and they haven't fully embraced a high-frequency Shorts strategy, creating an "authority gap."</p>
+                        <p class="text-gray-600 mt-2">**EcoOnline's Opportunity:** Become the most **reliable and consistent** source for practical safety knowledge, winning the loyalty of an underserved audience.</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-gray-800">Engagement Leader: Salus Safety</h4>
+                        <p class="text-gray-600 mt-2">**What they do well:** They master the "human" element. Their videos are relatable, use humor, and feature authentic employees, making safety content engaging and shareable.</p>
+                         <p class="text-gray-600 mt-2">**Where they fall short:** As a small player, they lack the scale and depth of expertise to cover the full breadth of EHS and ESG topics.</p>
+                        <p class="text-gray-600 mt-2">**EcoOnline's Opportunity:** Adopt their engaging, human-centric style but apply it at scale, combining relatability with deep subject matter expertise.</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-gray-800">The "ESG Void": Persefoni & Others</h4>
+                        <p class="text-gray-600 mt-2">**What they do well:** Competitors like Persefoni are winning the ESG battle in blog posts and SEO, proving there is high search demand for these topics.</p>
+                        <p class="text-gray-600 mt-2">**Where they fall short:** Their YouTube presence is virtually nonexistent. They are not translating their written expertise into video, leaving a massive strategic opening.</p>
+                        <p class="text-gray-600 mt-2">**EcoOnline's Opportunity:** Dominate the ESG conversation on video by being the first to create high-quality, practical video content for managers and directors on topics like CSRD, carbon accounting, and sustainability reporting.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Audience Personas Section -->
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold text-center text-[#1A202C] mb-8">Connecting with the Full EcoOnline Audience</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-2xl shadow-lg border-t-4 border-[#A5D6A7]">
+                    <h3 class="text-xl font-bold text-[#004D40]">Frank, The End-User</h3>
+                    <p class="font-semibold text-gray-500 text-sm mb-3">The Field Operator</p>
+                    <p class="text-sm text-gray-700">Values efficiency and needs straightforward instructions that make his job easier and safer without slowing him down.</p>
+                    <p class="text-sm mt-3"><strong class="text-gray-800">Video Need:</strong> Sub-60-second "how-to" Shorts that solve a single, specific app-related problem.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-lg border-t-4 border-[#004D40]">
+                    <h3 class="text-xl font-bold text-[#004D40]">Samantha, The Manager</h3>
+                    <p class="font-semibold text-gray-500 text-sm mb-3">The Safety Professional</p>
+                    <p class="text-sm text-gray-700">Overworked and drowning in paperwork, she needs practical, time-saving solutions for compliance and team engagement.</p>
+                     <p class="text-sm mt-3"><strong class="text-gray-800">Video Need:</strong> Practical guides and compliance explainers (both Shorts and long-form) that establish best practices.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-lg border-t-4 border-gray-400">
+                    <h3 class="text-xl font-bold text-[#004D40]">David, The Director</h3>
+                    <p class="font-semibold text-gray-500 text-sm mb-3">The Executive</p>
+                    <p class="text-sm text-gray-700">Focused on ROI, risk, and efficiency, he needs to see the clear business case and strategic impact of any initiative.</p>
+                     <p class="text-sm mt-3"><strong class="text-gray-800">Video Need:</strong> High-level, long-form content (expert interviews, ROI analysis) that frames safety as a driver of business value.</p>
+                </div>
+            </div>
+        </section>
 
         <!-- Tab Navigation -->
         <div class="mb-12 flex justify-center border-b border-gray-200">
@@ -222,6 +285,59 @@
                     document.getElementById(targetPaneId).classList.remove('hidden');
                 });
             });
+
+            // Competitor Chart
+            const ctx = document.getElementById('competitorChart');
+            if (ctx) {
+                new Chart(ctx.getContext('2d'), {
+                    type: 'bar',
+                    data: {
+                        labels: ['Safety Culture', 'Intelex', 'Velocity EHS', 'Cority', 'Sphera', 'Enablon', 'EcoOnline'],
+                        datasets: [{
+                            label: 'YouTube Subscribers',
+                            data: [31600, 1690, 250, 418, 134, 470, 168],
+                            backgroundColor: [
+                                '#004D40', 
+                                '#A5D6A7',
+                                '#A5D6A7',
+                                '#A5D6A7',
+                                '#A5D6A7',
+                                '#A5D6A7',
+                                '#FFC107' // Highlight EcoOnline
+                            ],
+                            borderColor: '#FFFFFF',
+                            borderWidth: 2
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        indexAxis: 'y',
+                        scales: {
+                            x: {
+                                beginAtZero: true,
+                                title: {
+                                    display: true,
+                                    text: 'Subscribers'
+                                },
+                                ticks: {
+                                    callback: function(value) {
+                                        if (value >= 1000) {
+                                            return (value / 1000) + 'k';
+                                        }
+                                        return value;
+                                    }
+                                }
+                            }
+                        },
+                        plugins: {
+                            legend: {
+                                display: false
+                            }
+                        }
+                    }
+                });
+            }
         });
     </script>
 </body>
